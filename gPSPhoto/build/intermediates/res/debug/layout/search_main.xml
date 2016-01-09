@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpsphoto.MainActivity"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00b0f0">
+
+   
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Search a Place"
+        android:textColor="#ffffff"
+        android:textSize="20dp" >
+        
+    </TextView>
+
+     <ImageView
+         android:id="@+id/btnSearch"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:src="@drawable/search" >
+        
+    </ImageView>
+    
+</RelativeLayout>
+
+	<ListView
+        android:id="@+id/placeList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="10dp"
+        android:divider="#ffffff"
+        android:layout_weight="1"
+        
+      >
+    </ListView>
+    
+</LinearLayout>
+<!-- From: file:/C:/Users/Sebat/Desktop/GPSPhoto1/gPSPhoto/src/main/res/layout/search_main.xml -->

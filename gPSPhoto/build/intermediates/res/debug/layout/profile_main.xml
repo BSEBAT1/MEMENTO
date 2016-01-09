@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpsphoto.MainActivity"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.gpsphoto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00b0f0">
+
+   
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Profile"
+        android:textColor="#ffffff"
+        android:textSize="30dp" >
+        
+    </TextView>
+</RelativeLayout>
+
+	<com.pkmmte.circularimageview.CircularImageView
+	    android:id="@+id/btnUser"
+	    android:layout_width="150dp"
+	    android:layout_height="150dp"
+	    android:layout_gravity="center"
+	    android:layout_margin="2dp"
+	    android:clickable="true"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/ic_launcher"
+	    app:border="true"
+	    app:border_color="#FFFFFFFF"
+	    app:border_width="4dp"
+	    app:selector="true"
+	    app:selector_color="#4403a9f4"
+	    app:selector_stroke_color="#aa5677fc"
+	    app:selector_stroke_width="4dp"
+	    app:shadow="true" />
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    >
+
+		<EditText
+		    android:id="@+id/txtUserName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:text="UserName"
+		    android:singleLine="true"
+		    android:textColor="#000000"
+		    android:textSize="25dp" />
+
+		<TextView
+		    android:id="@+id/txtUserNameShow"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:text="UserName"
+		    android:textColor="#000000"
+		    android:textSize="25dp" />
+
+	</RelativeLayout>
+    <ListView
+        android:id="@+id/profileImageList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="15dp"
+        android:divider="#ffffff"
+        android:layout_weight="1"
+        
+      >
+    </ListView>
+</LinearLayout>
+<!-- From: file:/C:/Users/Sebat/Desktop/GPSPhoto1/gPSPhoto/src/main/res/layout/profile_main.xml -->

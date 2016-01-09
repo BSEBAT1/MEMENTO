@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gpsphoto.MainActivity"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.gpsphoto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00b0f0">
+
+   
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Profile"
+        android:textColor="#ffffff"
+        android:textSize="30dp" >
+        
+    </TextView>
+</RelativeLayout>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	     >
+
+<com.pkmmte.circularimageview.CircularImageView
+    android:id="@+id/btnUser"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_gravity="left"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="2dp"
+    android:clickable="true"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_launcher"
+    app:border="true"
+    app:border_color="#FFFFFFFF"
+    app:border_width="4dp"
+    app:selector="true"
+    app:selector_color="#4403a9f4"
+    app:selector_stroke_color="#aa5677fc"
+    app:selector_stroke_width="4dp"
+    app:shadow="true" />
+
+		<EditText
+		    android:id="@+id/txtUserName"
+		    android:layout_width="200dp"
+		    android:layout_height="40dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerHorizontal="true"
+		    
+		    android:gravity="center"
+		    android:singleLine="true"
+		    android:text="UserName"
+		    android:textColor="#000000"
+		    android:textSize="18dp" />
+
+		<EditText
+		    android:id="@+id/txtPassword"
+		    android:layout_below="@id/txtUserName" 
+			android:layout_width="200dp"
+		    android:layout_height="40dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentRight="true"
+		    android:hint="New Password"
+		    android:singleLine="true"
+		    android:password="true"
+		    android:textColor="#000000"
+		    android:gravity="center"
+		    android:textSize="15dp" />
+		<EditText
+		    android:id="@+id/txtRetypePassword"
+		    android:layout_below="@id/txtPassword" 
+			android:layout_width="200dp"
+		    
+		    android:layout_height="40dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentRight="true"
+		    android:hint="New Retype Password"
+		    android:password="true"
+		    android:singleLine="true"
+		    android:gravity="center"
+		    android:textColor="#000000"
+		    android:textSize="15dp" />
+	</RelativeLayout>
+	<Button
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:text="Change UserInformation"
+	    android:onClick="OnClickChangeInfo"
+	    android:textSize="20dp">
+	    
+	</Button>
+    <ListView
+        android:id="@+id/profileImageList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="15dp"
+        android:divider="#ffffff"
+        android:layout_weight="1"
+        
+      >
+    </ListView>
+</LinearLayout>

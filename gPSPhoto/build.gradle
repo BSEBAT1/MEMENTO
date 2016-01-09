@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 15
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.example.gpsphoto"
+        minSdkVersion 15
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':circularImageView1')
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/imageLoader.jar')
+    compile files('libs/picasso-2.3.2.jar')
+}
